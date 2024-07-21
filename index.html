@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <style>
+        .left-text {
+    text-align: left;
+  }
+        #portfolio {
+            margin-top: 50px; 
+        }
+       
+        .download-button {
+    
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: cyan; 
+    color: black;
+    border: none; 
+    cursor: pointer; 
+    box-shadow: 0 0 5px cyan;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    bottom:20px;
+}
+
+.download-button:hover {
+
+    box-shadow: 
+        0 0 5px cyan,
+        0 0 25px cyan,
+        0 0 50px cyan,
+        0 0 100px cyan,
+        0 0 200px cyan;
+}
+.contact-button {
+    /* Base styles */
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: cyan; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    box-shadow: 0 0 5px cyan;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-button:hover {
+   
+    box-shadow: 
+        0 0 5px cyan,
+        0 0 25px cyan,
+        0 0 50px cyan,
+        0 0 100px cyan,
+        0 0 200px cyan;
+}
+.skills-heading {
+            color: #0ef5e8;
+            font-size: 70px;
+            text-align: center;
+            top:20px;
+    text-align: center; 
+   
+    margin-bottom: 10px;
+}
+#skills {
+    padding-top: 50px; 
+}
+        
+.layer p {
+    text-align: left;
+}
+.navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: darkblue; 
+  
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.navbar a:hover {
+    color: red; 
+}
+     
+.navbar a.active {
+    color: red; 
+}   
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">PORTFOLIO</a>
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:3">Services</a>
+            <a href="#skills" style="--i:3">Skills</a>
+            <a href="#portfolio" style="--i:4">Projects</a>
+            <a href="#resume" style="--i:5">Resume</a>
+            <a href="#contact" style="--i:6">Contact</a>
+        </nav>
+       
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2 style="font-size: 50px;">Hello, I'm  </h2>
+            <h1>Madhu Mitha.L</h1>
+            <h3 style="font-size: 40px;"> And I'm a <span class="text"style="font-size: 40px;"></span></h3>
+            <p class="text-left">I'm a college student exploring the world of web development.
+                Driven by curiosity and creativity, I'm still learning to craft user-friendly interfaces.
+                I enjoy building responsive websites.
+                I'm eager to explore new technologies and expand my skills in web development.
+                
+            </p>
+            <div class="home-scl">
+               <!-- <a href="#" style="--i:7;"><i class='bx bxl-facebook'></i></a> -->
+               <a href="https://www.linkedin.com/in/madhu-mitha-l-9269582b9" target="_blank" class="social-link">
+                <i class='bx bxl-linkedin' style="color: #0077b5; font-size: 30px;"onmouseover="this.style.color='yellow';"
+                onmouseout="this.style.color='#0077b5';"></i>
+              </a>
+              
+              <a href="https://wa.me/8124314738" target="_blank" class="social-link">
+                <i class='bx bxl-whatsapp' style="color: #25d366; font-size: 30px;"onmouseover="this.style.color='yellow';"
+                onmouseout="this.style.color='#25d366';"></i>
+              </a>
+              
+          
+              <button id="go-back-btn" style="display:none;">Go back to portfolio</button>
+               <!-- <a href="#" style="--i:10;"><i class='bx bxl-tiktok'></i></a> -->
+            </div>
+            <section id="home">
+            <a href="#about"  class="btn-box"
+            style="padding: 10px 20px;
+                   font-size: 20px;
+                   background-color: #11dae4; /* Background color */
+                   color: white; /* Text color */
+                   border: none; /* Remove default button border */
+                   cursor: pointer; /* Cursor style */
+                   box-shadow: 0 0 5px #ff5722; /* Adjusted box shadow color */
+                   border-radius: 10px;
+                   transition: box-shadow 0.3s ease;
+                   text-decoration: none; /* Remove underline */
+                   display: inline-block; /* Ensure it behaves as a block element */
+                   text-align: center; /* Center text */
+                   line-height: 1; /* Ensure proper line height for single line text */
+                   "
+            onmouseover="this.style.boxShadow = '0 0 5px  cyan, 0 0 25px  cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px  cyan';"
+            onmouseout="this.style.boxShadow = '0 0 5px #ff5722';"
+            role="button" aria-label="More About Me"
+         >
+             More About Me
+         </a>
+         
+
+</div>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src=".\IMAGES\photocopy of MADHU MITHA.L.jpg" alt="About Image">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h4> Aspiring Full Stack Developer!</h4>
+            <p class="text-right">
+               
+                
+                "I am a proactive and creative college student deeply passionate about both front-end and back-end development. My journey in computer science has equipped me with robust technical skills and a keen eye for user-centric design. I thrive on tackling complex problems and am eager to apply my skills in a professional environment that fosters innovation and collaboration."
+
+
+
+</p>
+            <a href="#contact" class="btn-box"
+           
+    style="padding: 10px 20px;
+           font-size: 20px;
+           background-color: #34302f; /* Background color */
+           color: white; /* Text color */
+           border: none; /* Remove default button border */
+           cursor: pointer; /* Cursor style */
+           box-shadow: 0 0 5px #f410be; /* Initial box shadow color */
+           border-radius: 10px;
+           transition: box-shadow 0.3s ease;
+           text-decoration: none; /* Remove underline */
+           display: inline-block; /* Ensure it behaves as a block element */
+           text-align: center; /* Center text */
+           line-height: 1; /* Ensure proper line height for single line text */
+           "
+    onmouseover="this.style.boxShadow = '0 0 5px yellow, 0 0 25px  yellow, 0 0 50px yellow, 0 0 100px yellow, 0 0 200px  yellow';"
+    onmouseout="this.style.boxShadow = '0 0 5px #ff5722';"
+    role="button" aria-label="Contact Me">Contact Me</a>
+
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title" style="color:#d71dab;;">My Services</h1>
+         
+
+            <div class="services-list">
+                <div>
+                    
+                    <i class='bx bx-code' style='color:#00eeff'></i>
+                    <h2>Web Development</h2>
+                    <p class ="left-text"> Development is the creation  of websites and web applications using programming languages like HTML, CSS, and JavaScript. Developers ensure sites are functional, responsive, and secure across various platforms. Their focus is on delivering user-friendly and efficient online experiences.</p>
+                    <a href="https://www.geeksforgeeks.org/web-development/" class="read">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bxs-data' style='color:#00eeff'></i>
+                    <h2>Database Connectivity</h2>
+                    <p class ="left-text">Database connectivity facilitates software applications to interact with databases, enabling efficient data retrieval, storage, manipulation, and ensuring seamless interaction across platforms. It guarantees data integrity, security, and efficiency in web and software development environments.</p>
+                    <a href="https://www.geeksforgeeks.org/how-to-create-a-database-connection/?ref=lbp" class="read">Learn more</a>
+                </div>
+                <div>
+                    <i class='bx bxl-apple' style='color:#00eeff'></i>
+                    <h2>App Development</h2>
+                    <p class ="left-text">App development entails creating mobile applications for iOS and Android, emphasizing user experience, functionality, and performance. Developers use programming languages and frameworks to build intuitive, responsive apps tailored to user needs, enhancing accessibility and usability.</p>
+                    <a href="https://kissflow.com/application-development/what-is-application-development/" class="read">Learn more</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="gradient-background">
+    <section id="skills">
+        <h1 class="skills-heading">My Skills</h1>
+        <div class="container1">
+            <h1 class="heading1">Technical Skills</h1>
+            <div class="Technical-bars">
+                <div class="bar html">
+                    <i style="color: #14bc33" class='bx bxl-html5'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html" style="position: relative;">
+                      
+                        <span style="width: 75%;"></span>
+                    </div>
+                    <div class="progress-text" style="position: absolute; top: 140px; left: 50%; transform: translateX(-50%); font-size: 18px;font-weight: bold; color: white;">75%</div>
+                </div>
+                <div class="bar css">
+                    <i style="color: #14bc33" class='bx bxl-css3'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css" style="position: relative;">
+                       
+                        <span style="width: 70%;"></span>
+                    </div>
+                    <div class="progress-text" style="position: absolute; top: 140px; left: 50%; transform: translateX(-50%); font-size: 18px;font-weight: bold; color: white;">70%</div>
+                </div>
+                <div class="bar javascript">
+                    <i style="color: #14bc33" class='bx bxl-javascript'></i>
+                    <div class="info">
+                        <span>JavaScript</span> 
+                     
+                        
+                    </div>
+                    <div class="progress-line javascript" style="position: relative;">
+                        
+                        <span style="width: 65%;"></span>
+                    </div>
+                    <div class="progress-text" style="position: absolute; top: 140px; left: 50%; transform: translateX(-50%); font-size: 18px; font-weight: bold;color: white;">65%</div>
+                </div>
+                <div class="bar python">
+                    <i style="color: #14bc33" class='bx bxl-python'></i>
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python" style="position: relative;">
+                       
+                        <span style="width: 80%;"></span>
+                    </div>
+                    <div class="progress-text" style="position: absolute; top: 140px; left: 50%; transform: translateX(-50%); font-size: 18px;font-weight: bold; color: white;">80%</div>
+                </div>
+                <div class="bar c-plus-plus">
+                    <i style="color: #14bc33" class='bx bxl-c-plus-plus'></i>
+                    <div class="info">
+                        <span>C++</span>
+                    </div>
+                   
+                    <div class="progress-line c-plus-plus" style="position: relative;">
+                        
+                        <span style="width: 70%;"></span>
+                    </div>
+                    <div class="progress-text" style="position: absolute; top: 140px; left: 50%; transform: translateX(-50%); font-size: 18px;font-weight: bold; color: white;">70%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+    
+    
+    
+    <div class="container1">
+        <h1 class="heading1">Professional Skills</h1>
+        <div class="radial-bars" style="display: flex; justify-content: space-around;">
+            <div class="radial-bar" style="width: 200px; text-align: center;">
+                <svg viewBox="0 0 200 200" style="width: 100%; height: auto;"class="glow-circle">
+                    <!-- Background circle -->
+                    <circle cx="100" cy="100" r="70" fill="none" stroke="#e0e0e0" stroke-width="12"></circle>
+                    <!-- Progress circle - Creativity -->
+                    <circle cx="100" cy="100" r="70" fill="none" stroke="orange" stroke-width="12"
+                        stroke-dasharray="439.8" stroke-dashoffset="55.00"></circle>
+                </svg>
+                <div style="font-size: 1.5rem; font-weight: bold;">90%</div>
+                <div style="font-size: 20px;">Creativity</div>
+            </div>
+            
+            <div class="radial-bar" style="width: 200px; text-align: center;">
+                <svg viewBox="0 0 200 200" style="width: 100%; height: auto;"class="glow-circle">
+                    <!-- Background circle -->
+                    <circle cx="100" cy="100" r="70" fill="none" stroke="#e0e0e0" stroke-width="12"></circle>
+                    <!-- Progress circle - Communication -->
+                    <circle cx="100" cy="100" r="70" fill="none" stroke="#147bbc" stroke-width="12"
+                        stroke-dasharray="439.8" stroke-dashoffset="65.00"></circle>
+                </svg>
+                <div  class="percentage"style="font-size: 1.5rem; font-weight: bold;">85%</div>
+                <div calss = "text"style="font-size: 20px; bottom:5px;">Communication</div>
+            </div>
+    
+            <div class="radial-bar" style="width: 200px; text-align: center;">
+                <svg viewBox="0 0 200 200" style="width: 100%; height: auto;" class="glow-circle">
+                    <!-- Background circle -->
+                    <circle cx="100" cy="100" r="70" fill="none" stroke="#e0e0e0" stroke-width="12"></circle>
+                    <!-- Progress circle - Problem Solving -->
+                    <circle cx="100" cy="100" r="70" fill="none" stroke="red" stroke-width="12"
+                        stroke-dasharray="439.8" stroke-dashoffset="105.00"></circle>
+                </svg>
+                <div style="font-size: 1.5rem; font-weight: bold;">65%</div>
+                <div style="font-size: 20px;">Problem Solving</div>
+            </div>
+    
+            <div class="radial-bar" style="width: 200px; text-align: center;">
+                <svg viewBox="0 0 200 200" style="width: 100%; height: auto;" class="glow-circle">
+                    <!-- Background circle -->
+                    <circle cx="100" cy="100" r="70" fill="none" stroke="#e0e0e0" stroke-width="12"></circle>
+                    <!-- Progress circle - Teamwork -->
+                    <circle  cx="100" cy="100" r="70" fill="none" stroke="darkgreen" stroke-width="12"
+                        stroke-dasharray="439.8" stroke-dashoffset="85.00"></circle>
+                </svg>
+                <div style="font-size: 1.5rem; font-weight: bold;">75%</div>
+                <div style="font-size: 20px;">Teamwork</div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+    <section class="portfolio" id="portfolio" style="margin-top: 50px;">
+        <div class="main-text">
+            <h2>Latest Projects</h2>
+            <div class="portfolio-content">
+                
+                <div class="row">
+                   
+                    <div class="layer">
+                        <h5>ATM SIMULATOR</h5>
+                        <p style="margin-top: 50px; margin-bottom: 1rem; text-align: left;"> It is developed using Python and tkinter, this allows users to securely log in with an account and password. Once authenticated, users can perform various banking operations including withdrawing funds, checking their account balance, and depositing money into their account. It mimicks the functionalities of a real ATM system.</p>
+                       
+                    </div>
+                </div>
+                <div class="row">
+                   
+                    <div class="layer">
+                        <h5> ONLINE BUS TICKET BOOKING SYSTEM</h5>
+                        <p style="margin-top: 10px; margin-bottom: 1rem;text-align: left;">The bus ticket booking system utilizes PHP backend connectivity to facilitate user bookings with unique IDs assigned to each bus route. Users can select their preferred route, complete the booking process, and receive a receipt confirming their reservation. This system  enhance the overall booking experience.</p>
+
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="layer">
+                        <h5> DTMF DECODER</h5>
+                        <p style="margin-top: 50px; margin-bottom: 1rem;text-align: left;">The Dual Tone Multi-Frequency (DTMF) Decoder project involves creating a system where lights glow based on binary digits received from DTMF tones. Using C++ and electronics, this project decodes DTMF signals into binary form, triggering corresponding lights to illuminate, demonstrating real-time signal processing and integration.</p>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="resume" id="resume">
+        <div class="resume-content">
+            <h1  style="font-size: 60px; margin-bottom: 10px;color:#18f735">Resume</h1>
+           
+                
+            
+            <p  style="font-size: 30px; margin-top: 10px;color:white; text-align: left;  line-height: 1.6;
+            max-width: 80%;
+            margin: 0 auto; "> Here, you will find detailed insights into my educational background, technical skills, and certifications. With a focus on web development, my resume showcases a robust commitment to excellence and a dedication to staying at the forefront of industry advancements. Explore the sections below to discover my journey, achievements, and </p>
+            <p style="font-size: 30px; color:white; text-align: center;  line-height: 1.6; ">how I bring innovation to every project.</p>
+
+          
+            
+            <h2 style="font-size: 40px; margin-bottom: 50px; margin-top: 50px;color:black">CLICK HERE TO DOWNLOAD MY <span>RESUME</span></h2>
+            <a href="https://drive.google.com/file/d/13D1Fep6egg8DUh7v83bOfPupPnsj4aPl/view?usp=sharing.pdf" class="download-button" download>Download Resume</a>
+         
+        </div>
+    </section>
+
+    
+    <script src="script.js"></script>
+    <section class="contact" id="contact">
+        <div class="contact-container">
+        <div class="contact-content">
+            <h2>Contact Me </h2>
+            <h4>Let's work Together</h4>
+            <p> Eager to connect with professionals, peers, and potential collaborators. If you have any questions, opportunities, or just want to discuss tech and innovation, can reach out to me.</p>
+            <div class="contact-list">
+                <li><i class = "bx bxs-send"></i>madhumitha@gmail.com</li>
+                <li><i class = "bx bxs-phone"></i>9902134510</li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/madhu-mitha-l-9269582b9" target="_blank" class="social-link">
+                    <i class='bx bxl-linkedin' style="color: #0077b5; font-size: 30px;"onmouseover="this.style.color='yellow';"
+                    onmouseout="this.style.color='#0077b5';"></i>
+                  </a>
+                  <a href="https://wa.me/8124314738" target="_blank" class="social-link">
+                    <i class='bx bxl-whatsapp' style="color: #25d366; font-size: 30px;"onmouseover="this.style.color='yellow';"
+                    onmouseout="this.style.color='#25d366';"></i>
+                  </a>
+            </div>
+        </div>
+            
+            <div class="contact-form">
+                <form action="mailto:madhumitha7.10.5@gmail.com" method="post" enctype="text/plain" class="form">
+                    
+                        <input type="" name="name" placeholder="Enter Your Name" required>
+                    
+                 
+                        <input type="email" name="email" placeholder="Enter Your Email" required>
+                   
+    
+                        <input type="" name="" placeholder="Enter Your Subject" required>
+                   
+                   
+                        <textarea name=""  id= "" cols="40" rows="10"placeholder ="Enter Your Message" required></textarea>
+                   
+                     
+                        <input type="submit" value="Send Message">
+                   
+                </form>
+            </div>
+          
+    
+           
+    </section>
+    <footer class="footer">
+        <p>Developed by Madhu Mitha.L &copy; 2024. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+
+</html>
