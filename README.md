@@ -2,7 +2,7 @@
 
 #  Objectives  of Portfolio
 
-**This portfolio aims to showcase the basic information of a college student or aspiring front-end developer in the form of portfolio. It highlights various skills, projects, and professional milestones in an engaging and interactive manner.**
+**This portfolio aims to showcase the basic professional portfolio of a college student or aspiring front-end developer. It highlights various skills, projects, and professional milestones in an engaging and interactive manner.**
 
 ## Key Features of Portfolio
 
@@ -37,6 +37,7 @@
 - **CSS:** Styles the portfolio to ensure a cohesive and visually appealing design. Includes hover effects, smooth scrolling, and responsive layouts to enhance user experience.
 
 - **JavaScript:** Adds interactivity and dynamic features such as the typing effect, smooth scrolling, resume upload functionality, and radial progress bars. JavaScript is essential for creating an engaging and user-friendly portfolio.
+  
 
 ## The outcome of the portfolio looks like this
 ![image](https://github.com/user-attachments/assets/21273080-099c-479a-b88b-33c16a922f0f)
@@ -45,6 +46,8 @@
 ![image](https://github.com/user-attachments/assets/ed982a5e-f111-4b8c-ad1f-8eeb6f825c1d)
 ![image](https://github.com/user-attachments/assets/6ef7edd7-65f8-4228-bb7d-aea68d457111)
 ![image](https://github.com/user-attachments/assets/ca3b1669-2592-4bde-9040-884b6c6ae09f)
+## Summary
+This portfolio is a well-rounded and interactive showcase of a front-end developer's skills and services. By combining modern web design techniques with dynamic and engaging features, it provides a professional and polished online presence. The use of HTML, CSS, and JavaScript ensures a robust and user-friendly experience, making it an effective tool for demonstrating the developer's capabilities and expertise.
 
 
 
